@@ -28,7 +28,7 @@ public class SpellBase : MonoBehaviour {
 		
 	}//end update
 
-    public virtual void Execute()//<spellbase>.Execute() calls the behaviour of the spell base, such as creating a projectile and checking if it hits any enemies
+    public virtual void Execute(Spell thisSpell)//<spellbase>.Execute() calls the behaviour of the spell base, such as creating a projectile and checking if it hits any enemies
     //virtual method because the behavior is different for every spell base
     {
 

@@ -30,7 +30,7 @@ public class SpellCore : MonoBehaviour {
 		
 	}//end update
 
-    public virtual void Execute()//<spellcore>.Execute() is the call to enact the spell's effects on its target, such as blowing it up or freezing it
+    public virtual void Execute(Spell thisSpell)//<spellcore>.Execute() is the call to enact the spell's effects on its target, such as blowing it up or freezing it
     //virtual method because WHAT a spell does depends on the specific spell core
     {
         //idk what to even put here, if anything

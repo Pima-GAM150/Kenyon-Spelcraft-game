@@ -14,6 +14,15 @@ public class Spell : MonoBehaviour {
     public float mpCost;//mp cost of the spell
     public float castLag;//time after casting before the caster can act again
 
+    public float corePotencyA;//the modifier for damage dealt or healing done
+    public float corePotencyB;//the duration modifier for effects like burn, slow, or buffs, and the range of chain lightning
+
+    public float basePotencyA;//the modifier for base spell range, size, or similar
+    public float basePotencyB;//the modifier for base spell speed, duration, or similar
+
+
+
+    
 
     public SpellBase thisBase;
     public SpellCore thisCore;
@@ -39,6 +48,8 @@ public class Spell : MonoBehaviour {
 
     public void Cast(Character caster)//"ABRACA HAPPEN!"
     {
+        SpellBase instance = Instantiate<SpellBase>(thisBase);
+        instance.Execute(this);
         //probably SpellBase.Execute() but im not sure lots of variables and information is having to get passed between various scripts. this is getting confusing
         //after that would SpellCore.Execute() happen here or would it happen in like, an object created by SpellBase.Execute()?
         //also probably more code stuff needs to happen
