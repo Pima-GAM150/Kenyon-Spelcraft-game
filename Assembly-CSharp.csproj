@@ -61,7 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BaseProjectile.cs" />
     <Compile Include="Assets\Character.cs" />
+    <Compile Include="Assets\CoreFire.cs" />
+    <Compile Include="Assets\CreateSpell.cs" />
     <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\Spell.cs" />

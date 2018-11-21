@@ -8,6 +8,7 @@ public class BaseProjectile : SpellBase {
 
     //variable space
 
+
     
 
 
@@ -15,7 +16,7 @@ public class BaseProjectile : SpellBase {
 
     //method space
 
-    public override void Execute(Spell thisSpell)
+    public override void Execute(Spell thisSpell, Character caster)
     {
         
         float projectileSpeed = thisSpell.basePotencyA;

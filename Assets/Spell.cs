@@ -49,7 +49,7 @@ public class Spell : MonoBehaviour {
     public void Cast(Character caster)//"ABRACA HAPPEN!"
     {
         SpellBase instance = Instantiate<SpellBase>(thisBase);
-        instance.Execute(this);
+        instance.Execute(this, caster);
         //probably SpellBase.Execute() but im not sure lots of variables and information is having to get passed between various scripts. this is getting confusing
         //after that would SpellCore.Execute() happen here or would it happen in like, an object created by SpellBase.Execute()?
         //also probably more code stuff needs to happen
